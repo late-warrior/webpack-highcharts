@@ -1,0 +1,25 @@
+{
+  "name": "highcharts-plugins",
+  "version": "0.1.0",
+  "description": "Module to streamline standardize highcharts plugin creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "highcharts",
+    "plugins"
+  ],
+  "author": "Sriram",
+  "license": "MIT",
+  "dependencies": {
+    "highstock-browserify": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "webpack": "^1.11.0",
+    "webpack-dev-server": "^1.10.1"
+  }
+} 
