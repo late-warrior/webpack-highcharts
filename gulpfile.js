@@ -6,22 +6,20 @@ var webpack = require("webpack");
 var WebpackDevServer = require("webpack-dev-server");
 
 var webpack_config = {
-    externals: { jquery: "jQuery" },
+    externals: { jquery: "jQuery"},
     plugins : [new webpack.ProvidePlugin({
         $ : "jquery",
         ht : "highstock-browserify",
     })],
-    entry: "./entry.js",
+    entry: "./app/scripts/entry.js",
     output: {
         path: path.join(__dirname, "dist"),
         filename: "bundle.js",
-        libraryTarget : "var",
-        library : "awesome"
     },
     devtool : "source-map",
     module: {
         loaders: [
-            { test: /\.css$/, loader: "style!css" }
+            { test: /\.css$/, loader: "style!css" },
         ]
     }
 };
